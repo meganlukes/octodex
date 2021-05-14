@@ -16,6 +16,7 @@ For header
     Alternatively, just have a space between the two boxes that will grow or shrink
   For maxwidth above a certain point, have an aside that will add "Back to GitHub.com" as seen on line 104 to the rightmost box (probably add class to that list item)
   Make github symbol and oxtodex an image and make sure there is consistent padding between it and the header?
+  Make header white or transparent?
 
 For cats
   Make cats a flexbox list that will need a row grid pattern
@@ -29,9 +30,5 @@ For cats
     Make sure name and number have fixed font sizes
     Make the cat size variable
 
-
-
-
-
-
+Make body grey
 */
