@@ -10,3 +10,28 @@ body {
   margin: 0;
   min-height: 100%;
 }
+/*
+For header
+  Make header a list composed of three items that will become boxes: "Home FAQ RSS", an empty box that will shrink or grow like Google, and a "Follow us on Twitter" 
+    Alternatively, just have a space between the two boxes that will grow or shrink
+  For maxwidth above a certain point, have an aside that will add "Back to GitHub.com" as seen on line 104 to the rightmost box (probably add class to that list item)
+  Make github symbol and oxtodex an image and make sure there is consistent padding between it and the header?
+
+For cats
+  Make cats a flexbox list that will need a row grid pattern
+    Use pixel size to make 1 column, 2 columns, 3 columns, and 4 columns
+    Make sure to list highest number to lowest number
+  Each list item will contain an image, below it the number and name
+    Make the number and name two separate items so the number can be a different color?
+    Use first child to make the number a different color?
+    Use flexbox columns for each list item?
+    Make sure cat has thin border, try to make rounded
+    Make sure name and number have fixed font sizes
+    Make the cat size variable
+
+
+
+
+
+
+*/
