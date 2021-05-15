@@ -2,6 +2,9 @@
 root {
   font: 16px / 1 sans-serif;
 }
+html {
+  height: 100%;
+}
 * {
   list-style: none;
   margin: 0;
@@ -10,13 +13,13 @@ root {
 }
 header {
   font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   background-color: white;
   border-bottom: 1px solid rgb(204, 204, 204);
   padding-left: 24px;
   padding-right: 24px;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 header img {
   margin-right: 24px;
@@ -34,17 +37,12 @@ header ul {
   align-items: center;
   justify-content: space-between;
 }
+
 div {
-  font-family: all;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
   margin-left: 24px;
   padding-right: 24px;
-}
-cats img {
-  margin-bottom: 40px;
-  padding: 8px;
-}
-html {
-  height: 100%;
 }
 p {
   height: 40px;
@@ -55,15 +53,21 @@ body {
   background-color: rgb(245, 245, 245);
 }
 
-ol {
+div ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 div img {
   border: 1px solid rgb(204, 204, 204);
-  border-radius: 0.3rem;
+  border-radius: 0.5rem;
   width: 100%;
+  margin-bottom: 16px;
+  max-width: 400px;
+}
+
+.cat {
+  margin-bottom: 40px;
 }
 /*
 For header
