@@ -1,14 +1,69 @@
-:root {
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap'); */
+root {
   font: 16px / 1 sans-serif;
 }
-
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: grey;
+}
+header {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  background-color: white;
+  border-bottom: 1px solid rgb(204, 204, 204);
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+header img {
+  margin-right: 24px;
+}
+.spaceAfter {
+  margin-right: 16px;
+}
+.after {
+  margin-right: 16px;
+}
+header ul {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  align-items: center;
+  justify-content: space-between;
+}
+div {
+  font-family: all;
+  margin-left: 24px;
+  padding-right: 24px;
+}
+cats img {
+  margin-bottom: 40px;
+  padding: 8px;
+}
 html {
   height: 100%;
 }
-
+p {
+  height: 40px;
+}
 body {
   margin: 0;
   min-height: 100%;
+  background-color: rgb(245, 245, 245);
+}
+
+ol {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+div img {
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 0.3rem;
+  width: 100%;
 }
 /*
 For header
@@ -19,11 +74,19 @@ For header
   Make header white or transparent?
 
 For cats
+  cats ordered list
+    left to right and wrap around
+
+543 is the point at which it changes from 1 column to 2
+1010 is the point at which it changes from 2 colummns to 3
+1280 is the point at which it changes from 3 columns to 4
+
+
   Make cats a flexbox list that will need a row grid pattern
     Use pixel size to make 1 column, 2 columns, 3 columns, and 4 columns
     Make sure to list highest number to lowest number
   Each list item will contain an image, below it the number and name
-    Make the number and name two separate items so the number can be a different color?
+    Make the number and name two separate items so the number can be a different color and the name bold
     Use first child to make the number a different color?
     Use flexbox columns for each list item?
     Make sure cat has thin border, try to make rounded
