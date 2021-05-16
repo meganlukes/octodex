@@ -1,4 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap'); */
 root {
   font: 16px / 1 sans-serif;
 }
@@ -17,7 +16,7 @@ header {
   background-color: white;
   border-bottom: 1px solid rgb(204, 204, 204);
   padding-left: 24px;
-  padding-right: 24px;
+  padding-right: 8px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -37,7 +36,11 @@ header ul {
   align-items: center;
   justify-content: space-between;
 }
-
+@media all and (max-width: 765px) {
+  ul li a {
+    visibility: collapse;
+  }
+}
 div {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
@@ -52,18 +55,34 @@ body {
   min-height: 100%;
   background-color: rgb(245, 245, 245);
 }
-
 div ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+@media all and (min-width: 765px) {
+  div ul {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+}
+@media all and (min-width: 1013px) {
+  div ul {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+  }
+}
+@media all and (min-width: 1275px) {
+  div ul {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+  }
 }
 div img {
   border: 1px solid rgb(204, 204, 204);
   border-radius: 0.5rem;
   width: 100%;
   margin-bottom: 16px;
-  max-width: 400px;
 }
 
 .cat {
@@ -71,6 +90,7 @@ div img {
   margin-right: 16px;
   margin-left: 16px;
 }
+
 /*
 For header
   Make header a list composed of three items that will become boxes: "Home FAQ RSS", an empty box that will shrink or grow like Google, and a "Follow us on Twitter" 
